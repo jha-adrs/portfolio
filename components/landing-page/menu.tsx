@@ -30,7 +30,7 @@ export const Menu = ({ }: MenuProps) => {
             </SheetDescription>
             <div className="flex flex-col items-center mt-4">
                 {siteConfig.navItems.map((item, index) => (
-                    <Link href={item.href} key={index} className={cn(buttonVariants({variant: "link"}),"")}>
+                    <Link href={item.href} key={index} className={cn(buttonVariants({variant: "link"}),"")} target={item.newTab ? '_blank' : ''}>
                         <p>{
                             item.label
                         }

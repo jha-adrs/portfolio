@@ -1,0 +1,16 @@
+export enum TagsEnum  {
+    nextjs = "nextjs",
+    typescript = "typescript",
+    tailwindcss = "tailwindcss",
+    nodejs = "nodejs",
+    sql = "sql",
+    react = "react",
+    javascript = "javascript",
+    mongodb = "mongodb",
+    postgresql = "postgresql",
+    docker = "docker",
+    python = "python",
+    graphql = "graphql",
+    openai = "openai",
+    prisma = "prisma",
+}

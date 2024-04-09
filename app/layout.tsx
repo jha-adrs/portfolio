@@ -3,6 +3,10 @@ import { Inter, Poppins, Montserrat_Alternates, Nunito_Sans } from "next/font/go
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import { LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { FooterComponent } from "@/components/footer-component";
 
 
 const nunito = Nunito_Sans({
@@ -29,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(nunito.className, "")}>
+      <body className={cn(nunito.className, "min-h-screen") }>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -37,6 +41,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+
+          <FooterComponent />
         </ThemeProvider>
       </body>
     </html>
