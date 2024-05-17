@@ -13,4 +13,5 @@ export enum TagsEnum  {
     graphql = "graphql",
     openai = "openai",
     prisma = "prisma",
+    markdown = "markdown",
 }

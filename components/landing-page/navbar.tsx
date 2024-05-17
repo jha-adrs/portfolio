@@ -25,7 +25,7 @@ export const Navbar = ({ }: NavbarProps) => {
                     {siteConfig.email}
                 </p>
             </Link>
-            <div className=" hidden sm:flex flex-row items-center ">
+            <div className=" hidden md:flex flex-row items-center ">
                 {siteConfig.navItems.map((item, index) => (
                     <Link href={item.href} key={index} className={cn(buttonVariants({variant: "link"}),"")} target={item.newTab ? '_blank' : ''}>
                         <p>{
@@ -36,7 +36,7 @@ export const Navbar = ({ }: NavbarProps) => {
                 ))}
                 <ModeToggle />
             </div>
-            <div className='flex sm:hidden'>
+            <div className='flex md:hidden'>
                     <Menu />
             </div>
         </nav>

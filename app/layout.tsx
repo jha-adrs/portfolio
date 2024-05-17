@@ -7,6 +7,8 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { FooterComponent } from "@/components/footer-component";
+import { Navbar } from "@/components/landing-page/navbar";
+import { Toaster } from "@/components/ui/sonner";
 
 
 const nunito = Nunito_Sans({
@@ -33,15 +35,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(nunito.className, "min-h-screen") }>
+      <body className={cn(nunito.className, "")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
-
+          <div className="flex flex-col w-full min-h-screen items-center justify-stretch">
+            <Navbar />
+            {children}
+          </div>
+          <Toaster />
           <FooterComponent />
         </ThemeProvider>
       </body>

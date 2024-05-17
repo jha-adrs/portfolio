@@ -12,11 +12,8 @@ interface ProjectsPageProps {
 
 const ProjectsPage = ({ }: ProjectsPageProps) => {
     return (
-        <div className='flex flex-col items-center'>
-            <Navbar />
-            <main className='flex flex-col items-center justify-center mt-8 h-full bg-background text-foreground'>
-
-                <div className="flex flex-col gap-y-6  px-6 ">
+           <div className="flex h-full w-full items-center justify-center pt-6">
+                <div className="flex flex-col gap-y-6 px-6 overflow-y-auto no-scrollbar">
                     <div className='gap-x-2 inline-flex items-center'>
                         <Link href={"/"}>
                             <Button variant={"outline"} size={"icon"} className='h-8 w-8'>
@@ -29,8 +26,7 @@ const ProjectsPage = ({ }: ProjectsPageProps) => {
                     </div>
                     <MainCard />
                 </div>
-            </main>
-        </div>
+           </div>
     )
 }
 

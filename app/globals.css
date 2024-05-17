@@ -68,4 +68,10 @@
       display: none;
     }
 
+    .glow {
+      box-shadow: rgba(243, 31, 77, 0.8) 0 0 99px 33px;
+      background-color: rgba(243, 31, 77, 0.8) 0 0 99px 33px;
+      background: rgba(243, 31, 77, 0.8) 0 0 99px 33px;
+    }
+
   }

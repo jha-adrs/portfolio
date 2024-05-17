@@ -1,11 +1,16 @@
 import { title } from "process";
-
+// For Techstack also need to add in types.ts
 export const siteConfig = {
     navItems: [
         {
             label: "Resume",
             href: "https://utfs.io/f/210079eb-7f74-4734-9618-6290e39a5517-v3yfv7.pdf",
             newTab: true
+        },
+        {
+            label: "Blog",
+            href: "/blog",
+            newTab: false
         },
         {
             label: "Projects",
@@ -22,6 +27,13 @@ export const siteConfig = {
     avatarURL: "https://utfs.io/f/2dfeeeb7-b9f5-4aef-85ac-22507e10d36d-wmljsp.png",
     resumeURL: "https://utfs.io/f/210079eb-7f74-4734-9618-6290e39a5517-v3yfv7.pdf",
     projects: [
+        {
+            title: "Portfolio",
+            description: "Personal portfolio website",
+            href: "https://platinumj.dev",
+            tags: ["nextjs", "typescript", "tailwindcss", "react", "markdown"],
+            detailedDescription: "Personal portfolio website andblog platform built using Next.js, TypeScript, TailwindCSS, and React.",
+        },
         {
             title: "Snapsite",
             description: "Professional archiving tool for the web",
@@ -131,6 +143,11 @@ export const siteConfig = {
             text: "OpenAI",
             color: "blue",
             logo: "/techstack/openai.svg"
+        },
+        markdown : {
+            text: "Markdown",
+            color: "blue",
+            logo: "/techstack/markdown.svg"
         }
 
     }
