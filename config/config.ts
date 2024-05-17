@@ -31,6 +31,8 @@ export const siteConfig = {
             title: "Portfolio",
             description: "Personal portfolio website",
             href: "https://platinumj.dev",
+            imageURL : "https://utfs.io/f/afa57efc-bf9e-4a68-ae39-e12481e35992-iiqo62.png",
+
             tags: ["nextjs", "typescript", "tailwindcss", "react", "markdown"],
             detailedDescription: "Personal portfolio website andblog platform built using Next.js, TypeScript, TailwindCSS, and React.",
         },
