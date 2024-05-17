@@ -77,7 +77,7 @@ const ContactPage = ({ }: ContactPageProps) => {
                             <FormItem>
                                 <FormLabel>Your Message</FormLabel>
                                 <FormControl>
-                                    <Textarea placeholder="Your name" {...field} />
+                                    <Textarea placeholder="Your thoughts..." {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>)

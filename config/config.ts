@@ -3,6 +3,11 @@ import { title } from "process";
 export const siteConfig = {
     navItems: [
         {
+            label: "Home",
+            href: "/",
+            newTab: false
+        },
+        {
             label: "Resume",
             href: "https://utfs.io/f/210079eb-7f74-4734-9618-6290e39a5517-v3yfv7.pdf",
             newTab: true

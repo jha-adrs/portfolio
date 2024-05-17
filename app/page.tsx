@@ -19,13 +19,13 @@ export default async function Home() {
             Hi, I&apos;m Aadarsh &#x1F44B;
           </p>
         </div>
-        <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl max-w-lg sm:max-w-xl md:max-w-2xl text-center">
+        <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl max-w-lg sm:max-w-xl md:max-w-2xl text-center p-2">
           Building digital products, brands and experience<span className="text-rose-500">.</span>
         </h1>
-        <h3 className="font-semibold max-w-md sm:max-w-lg text-xl text-center text-foreground/90">
+        <h3 className="font-semibold max-w-md sm:max-w-lg text-xl text-center text-foreground/90 p-2">
           I&apos;m a software engineer based in India specializing in building (and occasionally designing) exceptional digital experiences.
         </h3>
-        <Link href={"mailto:aadarshjha6783@gmail.com"} target="_blank">
+        <Link href={"/contact"} target="_blank">
           <Button variant={"bold"} size={"lg"} className="rounded-3xl">
             Connect with me
           </Button>

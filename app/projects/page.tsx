@@ -13,7 +13,7 @@ interface ProjectsPageProps {
 const ProjectsPage = ({ }: ProjectsPageProps) => {
     return (
            <div className="flex h-full w-full items-center justify-center pt-6">
-                <div className="flex flex-col gap-y-6 px-6 overflow-y-auto no-scrollbar">
+                <div className="flex flex-col gap-y-6 px-2 overflow-y-auto no-scrollbar">
                     <div className='gap-x-2 inline-flex items-center'>
                         <Link href={"/"}>
                             <Button variant={"outline"} size={"icon"} className='h-8 w-8'>

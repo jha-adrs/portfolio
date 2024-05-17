@@ -16,7 +16,7 @@ interface MainCardProps {
 
 export const MainCard = ({ }: MainCardProps) => {
     return (
-        <div className='flex flex-col gap-y-8 w-screen min-h-[500px] max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl no-scrollbar'>
+        <div className='flex flex-col gap-y-8  min-h-[500px] max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl no-scrollbar '>
             {
                 siteConfig.projects.map((project, index) => {
                     
