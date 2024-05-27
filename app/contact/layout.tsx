@@ -20,12 +20,17 @@ const ContactLayout = ({ children }: ContactLayoutProps) => {
                         {children}
 
                     </div>
-                    <div className="hidden lg:flex flex-col col-span-3 items-center justify-center border-l">
-                        {/* <h1 className="text-3xl font-bold">
-                    Let&apos;s talk!
-                </h1> */}
-                        <Image src="/contact.svg" width={400} height={400} alt="Contact us" />
+                    <div className="hidden lg:flex flex-col col-span-3 items-center justify-center border-l space-y-6">
 
+                        <Image src="/contact.svg" width={400} height={400} alt="Contact us" />
+                        <div className="flex flex-col items-center justify-center max-w-xl text-center">
+                            <h1 className="text-3xl font-bold">
+                                It&apos;s always the right time to talk code!
+                            </h1>
+                            <p className="text-sm text-muted-foreground">
+                               I&apos;m always open to new projects, ideas, or just a chat. Feel free to reach out to me on any of the platforms below.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

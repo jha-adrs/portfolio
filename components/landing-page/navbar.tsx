@@ -1,43 +1,67 @@
+"use client"
 import { siteConfig } from '@/config/config';
 import { cn } from '@/lib/utils';
-import { ArrowUpRight, LucideMail } from 'lucide-react';
+import { ArrowUpRight, LucideMail, MailIcon } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 import { buttonVariants } from '../ui/button';
 import { ModeToggle } from '../mode-toggle';
 import { Menu } from './menu';
+import { usePathname } from 'next/navigation';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '../ui/hover-card';
+import { CalendarIcon, ClipboardCopyIcon } from '@radix-ui/react-icons';
+import { CopyButton } from '../copy-button';
 
 interface NavbarProps {
 
 }
 
 export const Navbar = ({ }: NavbarProps) => {
+    const path = usePathname();
     return (
-        <nav className="flex  px-4 flex-row h-16 w-full  max-w-lg md:max-w-2xl lg:max-w-4xl bg-transparent border-b items-center justify-between">
-            <Link href={"mailto:aadarshjha6783@gmail.com"} target='blank' className="inline-flex items-center gap-x-2">
-                <div className="rounded-full border border-foreground p-2 ">
-                    <LucideMail className='w-6 h-6 stroke-1' />
+        <nav className="flex fixed top-0 px-4 flex-row h-16 w-full  max-w-lg md:max-w-2xl lg:max-w-4xl bg-transparent border-b border-b-white/70 items-center justify-between">
+            <div className="inline-flex items-center gap-x-2">
+                <Link href={path === "/" ? "mailto:aadarshjha6783@gmail.com" : "/"} target='blank' className="">
+                    <div className={
+                        cn("rounded-full border border-foreground ", path === "/" ? "p-2" : "p-0")
+                    }>
+                        {
+                            path === "/" ? <LucideMail size={24} /> : <Avatar>
+                                <AvatarImage src={siteConfig.avatarURL} alt="avatar" />
+                                <AvatarFallback>
+                                    AJ
+                                </AvatarFallback>
+                            </Avatar>
+                        }
+                    </div>
 
+                </Link>
+                <div className='flex items-center'>
+                    <p className={
+                        cn("text-nowrap font-semibold text-sm", buttonVariants({ variant: "link" }))
+                    }>
+                        {siteConfig.email}
+                    </p>
+                     <CopyButton text={siteConfig.email} />
                 </div>
-                <p className={
-                    cn("text-nowrap font-semibold text-sm", buttonVariants({ variant: "link" }))
-                }>
-                    {siteConfig.email}
-                </p>
-            </Link>
+            </div>
+
             <div className=" hidden md:flex flex-row items-center ">
                 {siteConfig.navItems.map((item, index) => (
-                    <Link href={item.href} key={index} className={cn(buttonVariants({variant: "link"}),"")} target={item.newTab ? '_blank' : ''}>
+                    <Link href={item.href} key={index} className={cn(buttonVariants({ variant: "link" }), "")} target={item.newTab ? '_blank' : ''}>
                         <p>{
                             item.label
                         }
                         </p>
                     </Link>
                 ))}
-                <ModeToggle />
+                {
+                    siteConfig.disableThemeToggle ? null : <ModeToggle />
+                }
             </div>
             <div className='flex md:hidden'>
-                    <Menu />
+                <Menu />
             </div>
         </nav>
     )

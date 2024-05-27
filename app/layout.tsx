@@ -9,6 +9,7 @@ import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { FooterComponent } from "@/components/footer-component";
 import { Navbar } from "@/components/landing-page/navbar";
 import { Toaster } from "@/components/ui/sonner";
+import Image from "next/image";
 
 
 const nunito = Nunito_Sans({
@@ -35,14 +36,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(nunito.className, "")}>
+      <body className={cn(nunito.className, "dark relative")}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col w-full min-h-screen items-center justify-stretch">
+
+          <div className="flex flex-col w-full min-h-screen items-center justify-center ">
+
             <Navbar />
             {children}
           </div>

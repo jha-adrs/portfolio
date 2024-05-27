@@ -1,6 +1,8 @@
 import { title } from "process";
 // For Techstack also need to add in types.ts
 export const siteConfig = {
+    disableThemeToggle: true
+    ,
     navItems: [
         {
             label: "Home",
@@ -29,7 +31,8 @@ export const siteConfig = {
         },
     ],
     email: "aadarshjha6783@gmail.com",
-    avatarURL: "https://utfs.io/f/2dfeeeb7-b9f5-4aef-85ac-22507e10d36d-wmljsp.png",
+    // avatarURL: "https://utfs.io/f/2dfeeeb7-b9f5-4aef-85ac-22507e10d36d-wmljsp.png",
+    avatarURL: "https://utfs.io/f/ee3ecf64-633b-4a0f-bbba-f97403272dde-9cuaf6.57.11_a5daf2b0.jpg",
     resumeURL: "https://utfs.io/f/210079eb-7f74-4734-9618-6290e39a5517-v3yfv7.pdf",
     projects: [
         {
@@ -73,11 +76,11 @@ export const siteConfig = {
         },
         linkedin: {
             label: "LinkedIn",
-            href: "https://www.linkedin.com/in/aadarsh-jha",
+            href: "https://www.linkedin.com/in/jha-aadarsh",
         },
         twitter: {
             label: "Twitter",
-            href: "https://twitter.com/jha_adrs",
+            href: "https://x.com/junior_dev_69",
         }
     },
     tech: {

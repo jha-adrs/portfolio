@@ -37,7 +37,9 @@ export const Menu = ({ }: MenuProps) => {
                         </p>
                     </Link>
                 ))}
-                <ModeToggleText/>
+                {
+                    siteConfig.disableThemeToggle ? null : <ModeToggleText />
+                }
             </div>
             </SheetContent>
         </Sheet>

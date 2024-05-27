@@ -1,77 +1,100 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
 
-  @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 224 71.4% 4.1%;
-      --card: 0 0% 100%;
-      --card-foreground: 224 71.4% 4.1%;
-      --popover: 0 0% 100%;
-      --popover-foreground: 224 71.4% 4.1%;
-      --primary: 220.9 39.3% 11%;
-      --primary-foreground: 210 20% 98%;
-      --secondary: 220 14.3% 95.9%;
-      --secondary-foreground: 220.9 39.3% 11%;
-      --muted: 220 14.3% 95.9%;
-      --muted-foreground: 220 8.9% 46.1%;
-      --accent: 220 14.3% 95.9%;
-      --accent-foreground: 220.9 39.3% 11%;
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 20% 98%;
-      --border: 220 13% 91%;
-      --input: 220 13% 91%;
-      --ring: 224 71.4% 4.1%;
-      --radius: 0.5rem;
-    }
-  
-    .dark {
-      --background: 224 71.4% 4.1%;
-      --foreground: 210 20% 98%;
-      --card: 224 71.4% 4.1%;
-      --card-foreground: 210 20% 98%;
-      --popover: 224 71.4% 4.1%;
-      --popover-foreground: 210 20% 98%;
-      --primary: 210 20% 98%;
-      --primary-foreground: 220.9 39.3% 11%;
-      --secondary: 215 27.9% 16.9%;
-      --secondary-foreground: 210 20% 98%;
-      --muted: 215 27.9% 16.9%;
-      --muted-foreground: 217.9 10.6% 64.9%;
-      --accent: 215 27.9% 16.9%;
-      --accent-foreground: 210 20% 98%;
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 210 20% 98%;
-      --border: 215 27.9% 16.9%;
-      --input: 215 27.9% 16.9%;
-      --ring: 216 12.2% 83.9%;
-    }
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
+    --radius: 0.5rem;
   }
-  
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
-    body::-webkit-scrollbar  {
-      overflow: -moz-scrollbars-none;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  
-    body::-webkit-scrollbar-thumb {
-      display: none;
-    }
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
+  }
+}
 
-    .glow {
-      box-shadow: rgba(243, 31, 77, 0.8) 0 0 99px 33px;
-      background-color: rgba(243, 31, 77, 0.8) 0 0 99px 33px;
-      background: rgba(243, 31, 77, 0.8) 0 0 99px 33px;
-    }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  body::-webkit-scrollbar {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  .glow {
+    box-shadow: rgba(243, 31, 77, 0.8) 0 0 99px 33px;
+    background-color: rgba(243, 31, 77, 0.8) 0 0 99px 33px;
+    background: rgba(243, 31, 77, 0.8) 0 0 99px 33px;
+  }
+
+  .glass-dark {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .bg-gradient {
+    background: hsla(349, 88%, 23%, 1);
+
+    background: linear-gradient(225deg, hsla(349, 88%, 23%, 1) 0%, hsla(251, 91%, 8%, 1) 34%);
+
+    background: -moz-linear-gradient(225deg, hsla(349, 88%, 23%, 1) 0%, hsla(251, 91%, 8%, 1) 34%);
+
+    background: -webkit-linear-gradient(225deg, hsla(349, 88%, 23%, 1) 0%, hsla(251, 91%, 8%, 1) 34%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6E071A", endColorstr="#090229", GradientType=1);
 
   }
+}

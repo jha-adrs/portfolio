@@ -12,7 +12,7 @@ interface FooterComponentProps {
 
 export const FooterComponent = ({ }: FooterComponentProps) => {
     return (
-        <div className='w-full min-h-36 mt-4'>
+        <div className='w-full min-h-36 '>
             <Separator />
             <footer className='flex flex-col items-center justify-center h-36 bg-background text-foreground gap-y-4'>
                 <div className="gap-x-2">
