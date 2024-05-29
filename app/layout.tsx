@@ -44,10 +44,12 @@ export default function RootLayout({
           disableTransitionOnChange
         >
 
-          <div className="flex flex-col w-full min-h-screen items-center justify-center ">
+          <div className="flex flex-col w-full min-h-screen items-center justify-center">
 
             <Navbar />
-            {children}
+            <div className="pt-16">
+              {children}
+            </div>
           </div>
           <Toaster />
           <FooterComponent />

@@ -48,7 +48,7 @@ function ProjectComponent({
     }
 }: { project: ProjectType }) {
     return (
-        <Card className=''>
+        <Card className='glass bg-white/10'>
             <CardHeader>
                 <CardTitle className='relative'>
                     <p className='text-xl font-bold'>

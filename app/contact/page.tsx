@@ -49,7 +49,7 @@ const ContactPage = ({ }: ContactPageProps) => {
                         <FormItem>
                             <FormLabel>Name</FormLabel>
                             <FormControl>
-                                <Input placeholder="Your name" {...field} />
+                                <Input placeholder="Your name" className='bg-white/10 glass' {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
@@ -63,7 +63,7 @@ const ContactPage = ({ }: ContactPageProps) => {
                             <FormItem>
                                 <FormLabel>Contact Email</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Your email" {...field} />
+                                    <Input placeholder="Your email" className='bg-white/10 glass' {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>)
@@ -77,7 +77,7 @@ const ContactPage = ({ }: ContactPageProps) => {
                             <FormItem>
                                 <FormLabel>Your Message</FormLabel>
                                 <FormControl>
-                                    <Textarea placeholder="Your thoughts..." {...field} />
+                                    <Textarea placeholder="Your thoughts..." className='bg-white/10 glass' {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>)

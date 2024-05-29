@@ -20,7 +20,7 @@ interface NavbarProps {
 export const Navbar = ({ }: NavbarProps) => {
     const path = usePathname();
     return (
-        <nav className="flex fixed top-0 px-4 flex-row h-16 w-full  max-w-lg md:max-w-2xl lg:max-w-4xl bg-transparent border-b border-b-white/70 items-center justify-between">
+        <nav className="flex fixed top-2 px-4 flex-row h-16 w-full  max-w-lg md:max-w-2xl lg:max-w-4xl border-b  items-center justify-between z-50 glass bg-transparent rounded-lg">
             <div className="inline-flex items-center gap-x-2">
                 <Link href={path === "/" ? "mailto:aadarshjha6783@gmail.com" : "/"} target='blank' className="">
                     <div className={

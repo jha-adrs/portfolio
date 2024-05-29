@@ -21,7 +21,7 @@ export const Menu = ({ }: MenuProps) => {
                 </Button>
             </SheetTrigger>
             
-            <SheetContent side={"top"}>
+            <SheetContent side={"right"} className=' bg-white/10 glass-low-blur rounded-b-md'>
             <SheetTitle>
                 Menu
             </SheetTitle>
