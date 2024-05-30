@@ -9,7 +9,7 @@ const ContactLayout = ({ children }: ContactLayoutProps) => {
     return (
         <>
             <div className=' w-full h-[85vh] flex flex-col items-center justify-center p-4'>
-                <div className='absolute left-0 top-0 w-full h-full bg-gradient opacity-90 -z-10 blur-sm' />
+                <div className='absolute left-0 top-0 w-full h-full bg-gradient  -z-10 blur-sm' />
                 <div className="flex flex-col col-span-2 space-y-3 lg:cols-span-5 p-6 h-full w-full items-center glass bg-transparent justify-center ">
                         <h1 className="text-2xl lg:text-3xl font-bold">
                             Let&apos;s get in touch

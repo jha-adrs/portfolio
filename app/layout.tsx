@@ -25,7 +25,7 @@ const nunito = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "PlatinumJ.dev",
+  title: "PlatinumJ",
   description: "Personal portfolio website and blog platform built using Next.js, TypeScript, TailwindCSS, and React.",
 };
 

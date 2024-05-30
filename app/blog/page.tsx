@@ -6,7 +6,7 @@ interface pageProps {
 
 const page = ({ }: pageProps) => {
     return (
-        <div>
+        <div className='flex flex-col w-64 h-64 glass bg-white/40'>
             Hii
         </div>
     )

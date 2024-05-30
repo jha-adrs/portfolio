@@ -12,25 +12,25 @@ interface FooterComponentProps {
 
 export const FooterComponent = ({ }: FooterComponentProps) => {
     return (
-        <div className='w-full min-h-36 '>
-            <Separator />
-            <footer className='flex flex-col items-center justify-center h-36 bg-background text-foreground gap-y-4'>
-                <div className="gap-x-2">
+        <div className='w-full min-h-36 py-6'>
+            <Separator className='bg-white/40' />
+            <footer className='flex flex-col items-center justify-center h-36 text-foreground gap-y-4 bg-transparent'>
+                <div className="space-x-2">
                     <Link href={siteConfig.socials.linkedin.href}>
                         <Button className="" size={"icon"} variant={"ghost"}>
-                            <LinkedInLogoIcon className='w-6 h-6 text-muted-foreground' />
+                            <LinkedInLogoIcon className='w-6 h-6 ' />
                         </Button>
                     </Link>
 
                     <Link href={siteConfig.socials.github.href}>
                         <Button className="" size={"icon"} variant={"ghost"}>
-                            <GitHubLogoIcon className='w-6 h-6 text-muted-foreground' />
+                            <GitHubLogoIcon className='w-6 h-6 ' />
                         </Button>
                     </Link>
 
                     <Link href={siteConfig.socials.twitter.href}>
                         <Button className="" size={"icon"} variant={"ghost"}>
-                            <TwitterLogoIcon className='w-6 h-6 text-muted-foreground' />
+                            <TwitterLogoIcon className='w-6 h-6 ' />
                         </Button>
                     </Link>
 

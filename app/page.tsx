@@ -15,7 +15,7 @@ export default async function Home() {
       <Image src={"/bg.png"} alt="Background" layout="fill" objectFit="cover" className="absolute -z-10 h-full w-full opacity-50 " /> */}
       {/* <div className="fixed right-3/4 top-1/2 h-0 w-0 glow" />
       <div className="fixed left-3/4 top-3/4 h-0 w-0 glow" /> */}
-      <div className="absolute left-0 top-0 w-full h-full bg-gradient opacity-90 -z-10 blur-sm" />
+      <div className="absolute left-0 top-0 w-full h-full bg-gradient -z-10 blur-sm" />
       <div className="flex flex-col gap-y-8 items-center z-20 ">
         <div className="flex flex-col gap-y-2 items-center">
           <Image src={siteConfig.avatarURL} alt="avatar" width={100} height={100} className="rounded-full" />

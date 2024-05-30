@@ -6,7 +6,7 @@ import { siteConfig } from '@/config/config';
 import { TagsEnum } from '@/lib/types';
 import { cn } from '@/lib/utils';
 import { Link1Icon } from '@radix-ui/react-icons';
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, LinkIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -50,24 +50,15 @@ function ProjectComponent({
     return (
         <Card className='glass bg-white/10'>
             <CardHeader>
-                <CardTitle className='relative'>
+                <CardTitle className='relative justify-between flex w-full flex-row'>
                     <p className='text-xl font-bold'>
                         {title}
                     </p>
-                    <TooltipProvider>
-                        <Tooltip>
-                            <TooltipTrigger className='absolute top-0 right-0'>
-                                <Link href={href} target='_blank' className="">
-                                    <Link1Icon className='w-4 h-4 ' />
-                                </Link>
-                            </TooltipTrigger>
-                            <TooltipContent side='top' align='center'>
-                                <p>
-                                    See Live Demo
-                                </p>
-                            </TooltipContent>
-                        </Tooltip>
-                    </TooltipProvider>
+                    <Link href={href} target='_blank' className="">
+                        <Button variant={"bold"} size={"sm"} className='capitalize glass bg-transparent text-white font-medium'>
+                         Live Demo &rarr;
+                        </Button>
+                    </Link>
                 </CardTitle>
                 <CardDescription className='space-y-4'>
                     {
