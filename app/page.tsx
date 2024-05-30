@@ -24,10 +24,10 @@ export default async function Home() {
           </p>
         </div>
         <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl max-w-lg sm:max-w-xl md:max-w-2xl text-center p-2">
-        Creating awesome digital solutions for business and fun side projects<span className="text-rose-500">.</span>
+          Creating awesome digital solutions for business and fun side projects<span className="text-rose-500">.</span>
         </h1>
         <h3 className="font-semibold max-w-md sm:max-w-lg text-xl text-center text-foreground/90 p-2">
-        A full stack developer with a knack for crafting amazing digital experiences. I dabble in various languages and frameworks, making each project unique and exciting.
+          A full stack developer with a knack for crafting amazing digital experiences. I dabble in various languages and frameworks, making each project unique and exciting.
         </h3>
         <div className="flex flex-row items-center space-x-4 justify-center">
           <Link href={"/projects"}>
@@ -43,7 +43,39 @@ export default async function Home() {
 
         </div>
       </div>
+      <div className="flex flex-col w-full h-64 bg-transparent pt-16 items-center justify-center">
+        {/* <h3 className="text-xl font-semibold">
+          Stuff I work with
+        </h3> */}
+        <div className="flex flex-row gap-x-4 items-center justify-center">
+          {skillComponent({ src: "/icons/react.svg", alt: "React", text: "React" })}
+          {skillComponent({ src: "/icons/nextjs.svg", alt: "Next.js", text: "Next.js" })}
+          {skillComponent({ src: "/icons/tailwindcss.svg", alt: "TailwindCSS", text: "TailwindCSS" })}
+          {skillComponent({ src: "/icons/nodejs.svg", alt: "Node.js", text: "Node.js" })}
+          {skillComponent({ src: "/icons/mongodb.svg", alt: "MongoDB", text: "MongoDB" })}
+          {skillComponent({ src: "/icons/firebase.svg", alt: "Firebase", text: "Firebase" })}
+          {skillComponent({ src: "/icons/graphql.svg", alt: "GraphQL", text: "GraphQL" })}
+          {skillComponent({ src: "/icons/aws.svg", alt: "AWS", text: "AWS" })}
+        </div>
+      </div>
 
     </main>
   );
+}
+
+const skillComponent = ({
+  src, alt, text
+}: {
+  src: string;
+  alt: string;
+  text: string;
+}) => {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <Image src={src} alt={alt} width={64} height={64} />
+      <p className="font-semibold text-lg">
+        {text}
+      </p>
+    </div>
+  )
 }
