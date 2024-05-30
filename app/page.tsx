@@ -1,7 +1,6 @@
-import { Navbar } from "@/components/landing-page/navbar";
+import { Skillset } from "@/components/landing-page/skillset";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/config";
-import { DownloadIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -43,39 +42,8 @@ export default async function Home() {
 
         </div>
       </div>
-      <div className="flex flex-col w-full h-64 bg-transparent pt-16 items-center justify-center">
-        {/* <h3 className="text-xl font-semibold">
-          Stuff I work with
-        </h3> */}
-        <div className="flex flex-row gap-x-4 items-center justify-center">
-          {skillComponent({ src: "/icons/react.svg", alt: "React", text: "React" })}
-          {skillComponent({ src: "/icons/nextjs.svg", alt: "Next.js", text: "Next.js" })}
-          {skillComponent({ src: "/icons/tailwindcss.svg", alt: "TailwindCSS", text: "TailwindCSS" })}
-          {skillComponent({ src: "/icons/nodejs.svg", alt: "Node.js", text: "Node.js" })}
-          {skillComponent({ src: "/icons/mongodb.svg", alt: "MongoDB", text: "MongoDB" })}
-          {skillComponent({ src: "/icons/firebase.svg", alt: "Firebase", text: "Firebase" })}
-          {skillComponent({ src: "/icons/graphql.svg", alt: "GraphQL", text: "GraphQL" })}
-          {skillComponent({ src: "/icons/aws.svg", alt: "AWS", text: "AWS" })}
-        </div>
-      </div>
+      <Skillset />
 
     </main>
   );
-}
-
-const skillComponent = ({
-  src, alt, text
-}: {
-  src: string;
-  alt: string;
-  text: string;
-}) => {
-  return (
-    <div className="flex flex-col items-center justify-center">
-      <Image src={src} alt={alt} width={64} height={64} />
-      <p className="font-semibold text-lg">
-        {text}
-      </p>
-    </div>
-  )
 }
