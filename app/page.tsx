@@ -22,13 +22,13 @@ export default async function Home() {
             Hi, I&apos;m Aadarsh &#x1F44B;
           </p>
         </div>
-        <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl max-w-lg sm:max-w-xl md:max-w-2xl text-center p-2">
+        <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl max-w-lg sm:max-w-xl md:max-w-2xl text-center p-4">
           Creating awesome digital solutions for business and fun side projects<span className="text-rose-500">.</span>
         </h1>
-        <h3 className="font-semibold max-w-md sm:max-w-lg text-xl text-center text-foreground/90 p-2">
+        <h3 className="font-semibold max-w-md sm:max-w-lg text-xl text-center text-foreground/90 p-6">
           A full stack developer with a knack for crafting amazing digital experiences. I dabble in various languages and frameworks, making each project unique and exciting.
         </h3>
-        <div className="flex flex-row items-center space-x-4 justify-center">
+        <div className="flex flex-col gap-4 md:flex-row items-center space-x-4 justify-center">
           <Link href={"/projects"}>
             <Button variant={"bold"} size={"lg"} className="rounded-3xl">
               See my work &rarr;

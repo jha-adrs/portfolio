@@ -13,7 +13,7 @@ interface ProjectsPageProps {
 const ProjectsPage = ({ }: ProjectsPageProps) => {
     return (
            <div className="flex h-full w-full items-center justify-center pt-6 ">
-            <div className="absolute left-0 top-0 w-full h-full bg-gradient2 opacity-80 -z-10 blur-sm" />
+            <div className="absolute left-0 top-0 w-full h-full bg-gradient opacity-80 -z-10 blur-sm" />
                 <div className="flex flex-col gap-y-6 px-2 overflow-y-auto no-scrollbar">
                     <div className='gap-x-2 inline-flex items-center'>
                         <Link href={"/"}>

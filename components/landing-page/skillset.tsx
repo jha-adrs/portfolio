@@ -9,7 +9,7 @@ export function Skillset() {
   return (
     <div className="h-[20rem] py-8 space-y-6 rounded-md flex flex-col antialiased bg-transparent dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden w-screen">
         
-        <h3 className="text-3xl font-bold">
+        <h3 className="text-2xl md:text-3xl font-bold">
             Tech Stack I&apos;ve worked with ⚒️
         </h3>
       <InfiniteMovingCards
