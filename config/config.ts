@@ -29,7 +29,7 @@ export const siteConfig = {
             newTab: false
         },
     ],
-    email: "aadarsh@platinumj.dev",
+    email: "aadarshjha6783@gmail.com",
     // avatarURL: "https://utfs.io/f/2dfeeeb7-b9f5-4aef-85ac-22507e10d36d-wmljsp.png",
     avatarURL: "https://utfs.io/f/ee3ecf64-633b-4a0f-bbba-f97403272dde-9cuaf6.57.11_a5daf2b0.jpg",
     resumeURL: "https://utfs.io/f/ac4dddb1-f81d-408d-9ae9-9f26a3072b13-v3yfv7.pdf",
