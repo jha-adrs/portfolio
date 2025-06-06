@@ -10,12 +10,12 @@ export const siteConfig = {
         },
         {
             label: "Resume",
-            href: "https://utfs.io/f/210079eb-7f74-4734-9618-6290e39a5517-v3yfv7.pdf",
+            href: "https://g0mfcoisif.ufs.sh/f/5MbMUNRMzVqZSKXojtPKobX5eGCngSOVJwjuy2Rqx14Y6Th0",
             newTab: true
         },
         {
             label: "Blog",
-            href: "https://blog.platinumj.dev",
+            href: "/blog",
             newTab: false
         },
         {
@@ -33,7 +33,31 @@ export const siteConfig = {
     // avatarURL: "https://utfs.io/f/2dfeeeb7-b9f5-4aef-85ac-22507e10d36d-wmljsp.png",
     avatarURL: "https://utfs.io/f/ee3ecf64-633b-4a0f-bbba-f97403272dde-9cuaf6.57.11_a5daf2b0.jpg",
     resumeURL: "https://utfs.io/f/ac4dddb1-f81d-408d-9ae9-9f26a3072b13-v3yfv7.pdf",
+    
+    // Blog configuration
+    blog: {
+        contentPath: 'content/blogs',
+        postsPerPage: 5,
+        featuredPosts: ['deploying-typescript-express-ec2', 'hello-world'],
+        sourceCodeURL: 'https://github.com/jha-adrs/portfolio',
+        defaultAuthor: 'Aadarsh Jha',
+        defaultAuthorImage: 'https://utfs.io/f/ee3ecf64-633b-4a0f-bbba-f97403272dde-9cuaf6.57.11_a5daf2b0.jpg',
+        defaultCoverImage: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1470&auto=format&fit=crop',
+        social: {
+            twitter: 'junior_dev_69',
+            github: 'jha-adrs'
+        }
+    },
+    
     projects: [
+        {
+            title: "Property Pulse",
+            description: "A real estate platform for managing properties, listings, and transactions.",
+            href: "https://propertypulse.live",
+            tags: ["nextjs", "typescript", "tailwindcss", "nodejs", "sql", "react", "javascript"],
+            imageURL: "https://g0mfcoisif.ufs.sh/f/5MbMUNRMzVqZTlNCFcWt2ADNkfZ1vwCJ6GEHxdlojrcugqpY",
+            detailedDescription: "Property Pulse is a real estate platform for managing properties, listings, and transactions. It allows users to create and manage property listings, view properties, and manage transactions. It is built using Next.js, TypeScript, TailwindCSS, Node.js, SQL, React, and JavaScript."
+        },
         {
             title: "Portfolio",
             description: "Personal portfolio website",

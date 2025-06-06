@@ -134,4 +134,61 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Adjust based on your navbar height */
+  }
+}
+
+@layer components {
+  /* Glass effect for code blocks */
+  pre {
+    @apply bg-background/60 backdrop-blur-md border border-border/50 shadow-lg !important;
+  }
+  
+  code {
+    @apply bg-background/70 backdrop-blur-sm !important;
+  }
+  
+  .blog-content pre {
+    @apply rounded-lg p-4 my-6 overflow-x-auto;
+  }
+  
+  .blog-content code {
+    @apply px-1.5 py-0.5 rounded text-sm;
+  }
+  
+  .blog-content p > code {
+    @apply bg-background/50 text-foreground border border-border/40 backdrop-blur-sm;
+  }
+  
+  /* Glass effect variations */
+  .glass {
+    @apply bg-background/60 backdrop-blur-md border border-border/50;
+  }
+  
+  .glass-dark {
+    @apply bg-background/80 backdrop-blur-md border border-border/70;
+  }
+  
+  .glass-low-blur {
+    @apply bg-background/70 backdrop-blur-sm border border-border/30;
+  }
+
+  /* Highlighted anchor targets */
+  :target {
+    animation: highlight 2s ease-out;
+  }
+
+  @keyframes highlight {
+    0% { background-color: rgba(var(--accent), 0.2); }
+    100% { background-color: transparent; }
+  }
+  
+  /* Add styling for table of contents */
+  .toc-link {
+    @apply text-foreground/80 hover:text-foreground transition-colors hover:underline;
+  }
 }
