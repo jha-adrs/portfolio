@@ -77,7 +77,7 @@ const ContactPage = ({ }: ContactPageProps) => {
                 </div>
                 <h2 className="text-2xl font-bold">Message Sent!</h2>
                 <p className="text-muted-foreground max-w-md">
-                    Thank you for reaching out! I'll get back to you as soon as possible.
+                    Thank you for reaching out! I&apos;ll get back to you as soon as possible.
                 </p>
                 <Button 
                     variant="outline" 
@@ -100,7 +100,7 @@ const ContactPage = ({ }: ContactPageProps) => {
                             Get In Touch
                         </h2>
                         <p className="text-muted-foreground">
-                            Have a project in mind or just want to say hello? Fill out the form and I'll get back to you shortly.
+                            Have a project in mind or just want to say hello? Fill out the form and I&apos;ll get back to you shortly.
                         </p>
                         
                         <div className="pt-4 space-y-3">
