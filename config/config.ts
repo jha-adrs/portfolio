@@ -183,5 +183,27 @@ export const siteConfig = {
             logo: "/techstack/markdown.svg"
         }
 
-    }
+    },
+    socialLinks: [
+        {
+            label: "GitHub",
+            url: "https://github.com/jha-adrs",
+            icon: "github"
+        },
+        {
+            label: "LinkedIn",
+            url: "https://www.linkedin.com/in/jha-aadarsh",
+            icon: "linkedin"
+        },
+        {
+            label: "Twitter",
+            url: "https://x.com/junior_dev_69",
+            icon: "twitter"
+        },
+        {
+            label: "Email",
+            url: "mailto:aadarshjha6783@gmailcom",
+            icon: "mail"
+        }
+    ]
 };
